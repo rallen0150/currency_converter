@@ -1,6 +1,6 @@
 # Need a dictionary to store all the wanted conversion rates.
 # Rates are all towards converting per USD.
-conversion_rate = {"USD": 1, "EUR": .89, "BTC": .0016, "JPY": 100.3, "GBP": 0.77, "CAD": 1.32, "MXN": 19.8981}
+conversion_rate = {"USD": 1, "EUR": .89, "BTC": .0016, "JPY": 100.3, "GBP": 0.77, "CAD": 1.32, "MXN": 19.8981, "CNY": 6.672}
 
 # Got help with the equation to convert from Tommy.
 def conversion(self, other):
