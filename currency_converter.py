@@ -50,9 +50,10 @@ class Money:
         return self.amount != other.amount
 
     def __str__(self):
-        return "{} {}".format(self.amount, self.currency)
+        return "{:.2f} in {}".format(self.amount, self.currency)
 
 # Prints out the Math functions of the converting rates.
 print(Money(100, "USD") + Money(56.32, "EUR") + Money(1.2, "BTC") + Money(8, "USD"))
+
 # Prints out the Boolean functions of the converting rates.
 print(Money(10, "USD") >= Money(10, "EUR"))
