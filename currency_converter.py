@@ -1,3 +1,5 @@
+# Need a dictionary to store all the wanted conversion rates.
+# Rates are all towards converting per USD.
 conversion_rate = {"USD": 1, "EUR": .89, "BTC": .0016, "JPY": 100.3}
 
 class Money:
@@ -43,11 +45,8 @@ class Money:
         money = conversion_rate[self.currency]/conversion_rate[other.currency]*other.amount
         return self.amount != money
 
-money1 = Money(10, "USD")
-money2 = Money(10, "EUR")
 
 # Prints out the Math functions of the converting rates.
-print("{0:.2f}".format(money1 * money2))
+print("{0:.2f}".format(Money(1, "BTC") + Money(100, "EUR")))
 # Prints out the Boolean functions of the converting rates.
-print(money1 != money2)
-# money.currency_exchange()
+print(Money(10, "USD") >= Money(10, "EUR"))
